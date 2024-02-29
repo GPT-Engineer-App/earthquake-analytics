@@ -41,6 +41,7 @@ const Index = () => {
             <HStack>
               <Input placeholder="Depth (km)" />
               <Input placeholder="Magnitude" />
+              <Input placeholder="Date (YYYY-MM-DD)" type="date" />
             </HStack>
             <Button leftIcon={<FaSearch />} colorScheme="teal" onClick={handlePredictClick}>
               Predict Earthquake

@@ -5,15 +5,15 @@ const Index = () => {
   const toast = useToast();
 
   const handlePredictClick = () => {
-    // Simulate a prediction event
+    // Simulate a prediction result
     toast({
-      title: "Prediction in progress",
-      description: "We're analyzing the data to predict earthquake occurrences.",
-      status: "info",
-      duration: 4000,
+      title: "Prediction complete",
+      description: "Earthquake likelihood has been evaluated for the selected date.",
+      status: "success",
+      duration: 5000,
       isClosable: true,
     });
-    // In a real-world scenario, here you would trigger the machine learning model to make a prediction.
+    // Note: In a real-world scenario, this would be a call to a machine learning API.
   };
 
   return (

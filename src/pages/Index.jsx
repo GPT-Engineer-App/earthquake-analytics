@@ -34,13 +34,7 @@ const Index = () => {
           </Heading>
           <Text mb={8}>Enter the parameters below to analyze seismic data and predict possible earthquake occurrences.</Text>
           <VStack spacing={4}>
-            <HStack>
-              <Input placeholder="Latitude" />
-              <Input placeholder="Longitude" />
-            </HStack>
-            <HStack>
-              <Input placeholder="Depth (km)" />
-              <Input placeholder="Magnitude" />
+            <HStack justifyContent="center">
               <Input placeholder="Date (YYYY-MM-DD)" type="date" />
             </HStack>
             <Button leftIcon={<FaSearch />} colorScheme="teal" onClick={handlePredictClick}>
